@@ -1,0 +1,58 @@
+body {
+    font-family: "Avenir Next", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+h3 {
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+
+.jumbotron {
+    background-color: white;
+    padding-top: 20px;
+    padding-bottom: 5px;
+}
+
+.contacthire {
+    color: black;
+}
+
+.me {
+    width: 300px;
+    height: 327px;
+}
+
+.navbar {
+    padding-left: 0em;
+}
+
+.navbar-expand .navbar-nav .nav-link {
+    padding-left: 0em;
+}
+
+.bubble {
+    background-color: #F5F7FA;
+    padding: 15px 15px 15px 15px;
+    border-radius: 6px;
+    color: #4A89DC;
+    font-size: 16px;
+    border: 1px solid #F5F7FA;
+    display: inline-block;
+}
+
+.available {
+    color: black;
+}
+
+.contact {
+    color: #D1D1D1;
+}
+
+.footer {
+    margin-top: 10px;
+    padding-top: 1px;
+    position: sticky;
+    width: 100%;
+    height: 250px;
+    background-color: #A87744;
+}
