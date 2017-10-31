@@ -41,6 +41,11 @@ li {
     display: inline-block;
 }
 
+.animated {
+    animation-duration: .75s;
+    animation-fill-mode: both;
+}
+
 .available {
     color: #233140;
 }
