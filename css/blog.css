@@ -1,6 +1,40 @@
+body {
+  font-family: "Avenir Next", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+h3 {
+  margin-top: 50px;
+  margin-bottom: 10px;
+}
+
+hr {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+a,
+a:focus,
+a:active,
+a.active {
+  color: #F5F7FA;
+  outline: none;
+}
+
+a:hover {
+  color: #18BC9C;
+}
+
+.navbar {
+  padding-left: 0em;
+}
+
+.navbar-expand .navbar-nav .nav-link {
+  padding-left: 0em;
+}
+
 .jumbotron {
   background-color: white;
-  padding-top: 20px;
+  padding-top: 5px;
   padding-bottom: 5px;
 }
 

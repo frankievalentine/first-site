@@ -1,0 +1,38 @@
+body {
+    font-family: "Avenir Next", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+h3 {
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+
+a,
+a:focus,
+a:active,
+a.active {
+    color: #F5F7FA;
+    outline: none;
+}
+
+a:hover {
+    color: #18BC9C;
+}
+
+.navbar {
+    padding-left: 0em;
+  }
+  
+.navbar-expand .navbar-nav .nav-link {
+    padding-left: 0em;
+}
+
+.btn-top-social {
+    color: rgba(0,0,0,.5);
+    display: inline-block;
+    height: 50px;
+    width: 40px;
+    text-align: center;
+    font-size: 30px;
+    line-height: 45px;
+}
