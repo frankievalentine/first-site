@@ -7,14 +7,48 @@ h3 {
     margin-bottom: 10px;
 }
 
+a,
+a:focus,
+a:active,
+a.active {
+    color: #F5F7FA;
+    outline: none;
+}
+
+a:hover {
+    color: #18BC9C;
+}
+
+footer {
+    color: white;
+}
+footer h3 {
+    margin-bottom: 30px;
+}
+footer .footer-above {
+    padding-top: 50px;
+    background-color: #2C3E50;
+}
+footer .footer-col {
+    margin-bottom: 50px;
+}
+footer .footer-below {
+    padding: 25px 0;
+    background-color: #233140;
+}
+
+li {
+    display: inline-block;
+}
+
+.available {
+    color: #233140;
+}
+
 .jumbotron {
     background-color: white;
     padding-top: 20px;
     padding-bottom: 5px;
-}
-
-.contacthire {
-    color: black;
 }
 
 .me {
@@ -40,19 +74,40 @@ h3 {
     display: inline-block;
 }
 
-.available {
+.btn-outline {
+    color: white;
+    font-size: 20px;
+    border: solid 2px white;
+    background: transparent;
+    transition: all 0.3s ease-in-out;
+    margin-top: 15px;
+}
+
+.btn-primary {
+    color: white;
+    background-color: #2C3E50;
+    border-color: #2C3E50;
+    font-weight: 700;
+}
+
+.btn-social {
     color: black;
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    border: 2px solid black;
+    border-radius: 100%;
+    text-align: center;
+    font-size: 20px;
+    line-height: 45px;
 }
 
-.contact {
-    color: #D1D1D1;
-}
-
-.footer {
-    margin-top: 10px;
-    padding-top: 1px;
-    position: sticky;
-    width: 100%;
-    height: 250px;
-    background-color: #A87744;
+.btn-top-social {
+    color: rgba(0,0,0,.5);
+    display: inline-block;
+    height: 50px;
+    width: 40px;
+    text-align: center;
+    font-size: 30px;
+    line-height: 45px;
 }

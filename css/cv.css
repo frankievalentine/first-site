@@ -2,6 +2,16 @@
     padding-left: 0em;
   }
   
-  .navbar-expand .navbar-nav .nav-link {
+.navbar-expand .navbar-nav .nav-link {
     padding-left: 0em;
-  }
+}
+
+.btn-top-social {
+    color: rgba(0,0,0,.5);
+    display: inline-block;
+    height: 50px;
+    width: 40px;
+    text-align: center;
+    font-size: 30px;
+    line-height: 45px;
+}
