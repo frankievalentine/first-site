@@ -22,16 +22,16 @@ a:hover {
 footer {
     color: white;
 }
-footer h3 {
-    margin-bottom: 30px;
-}
+
 footer .footer-above {
     padding-top: 50px;
     background-color: #2C3E50;
 }
+
 footer .footer-col {
     margin-bottom: 50px;
 }
+
 footer .footer-below {
     padding: 25px 0;
     background-color: #233140;
@@ -46,10 +46,6 @@ li {
     animation-fill-mode: both;
 }
 
-.available {
-    color: #233140;
-}
-
 .jumbotron {
     background-color: white;
     padding-top: 20px;
@@ -57,8 +53,15 @@ li {
 }
 
 .me {
+    padding-top: 20px;
     width: 300px;
-    height: 327px;
+    height: 347px;
+}
+
+.donate {
+    font-size: 14px;
+    text-align: left;
+    padding: 50px 10px 10px 10px;
 }
 
 .navbar {
@@ -69,6 +72,16 @@ li {
     padding-left: 0em;
 }
 
+.hireme .available {
+    font-size: 16px;
+    background-color: #233140;
+    color: white;
+    letter-spacing: 1px;
+    border-radius: 6px;
+    padding: 6px 10px 5px;
+    margin-right: 5px;
+}
+
 .bubble {
     background-color: #F5F7FA;
     padding: 15px 15px 15px 15px;
@@ -77,6 +90,11 @@ li {
     font-size: 16px;
     border: 1px solid #F5F7FA;
     display: inline-block;
+}
+
+.bubble:hover {
+    border: 1px solid #4A89DC;
+    box-shadow: 0 5px 10px 0 rgba(0,0,0,.5);
 }
 
 .btn-outline {
@@ -115,4 +133,16 @@ li {
     text-align: center;
     font-size: 30px;
     line-height: 45px;
+}
+
+.btn-dark {
+    cursor: pointer;
+}
+
+.btn-dark:hover {
+   color: #18BC9C;
+}
+
+.space {
+    padding-bottom: 50px;
 }

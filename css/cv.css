@@ -50,12 +50,18 @@ li {
   color: black;
 }
 
+.donate {
+  font-size: 14px;
+  text-align: left;
+  padding: 50px 10px 10px 10px;
+}
+
 .navbar {
-    padding-left: 0em;
+  padding-left: 0em;
   }
   
 .navbar-expand .navbar-nav .nav-link {
-    padding-left: 0em;
+  padding-left: 0em;
 }
 
 .btn-outline {
@@ -94,4 +100,8 @@ li {
     text-align: center;
     font-size: 30px;
     line-height: 45px;
+}
+
+.btn-dark {
+  cursor: pointer;
 }

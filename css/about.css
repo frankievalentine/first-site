@@ -41,9 +41,56 @@ li {
     display: inline-block;
 }
 
+.donate {
+    font-size: 14px;
+    text-align: left;
+    padding: 50px 10px 10px 10px;
+}
+
+.smashy {
+    color: #4A89DC;
+    background-color: #F5F7FA;
+    padding: 10px 10px 10px 10px;
+    font-size: 13px;
+    border-radius: 6px;
+    border: 1px solid #F5F7FA;
+    box-shadow: 0 3px 5px 0 rgba(0,0,0,.5);
+}
+
+.blockquote {
+    background-color: #F5F7FA;
+    padding: 5px 10px 10px 10px;
+    font-size: 13px;
+    border-radius: 6px;
+    border: 1px solid #F5F7FA;
+    box-shadow: 0 3px 5px 0 rgba(0,0,0,.5);
+}
+
+.top {
+    padding-top: 20px;
+}
+
+.mid {
+    padding-top: 20px;
+}
+
+.bottom {
+    padding-bottom: 20px;
+}
+
+.maxy {
+    text-align: right;
+}
+
+.jumbotron {
+    background-color: white;
+    padding-top: 20px;
+    padding-bottom: 5px;
+}
+
 .navbar {
     padding-left: 0em;
-  }
+}
   
 .navbar-expand .navbar-nav .nav-link {
     padding-left: 0em;
@@ -85,4 +132,8 @@ li {
     text-align: center;
     font-size: 30px;
     line-height: 45px;
+}
+
+.btn-dark {
+    cursor: pointer;
 }

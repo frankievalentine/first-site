@@ -41,6 +41,12 @@ li {
     display: inline-block;
 }
 
+.donate {
+    font-size: 14px;
+    text-align: left;
+    padding: 50px 10px 10px 10px;
+}
+
 .navbar {
     padding-left: 0em;
   }
@@ -85,4 +91,8 @@ li {
     text-align: center;
     font-size: 30px;
     line-height: 45px;
+}
+
+.btn-dark {
+    cursor: pointer;
 }
