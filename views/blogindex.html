@@ -2,11 +2,13 @@
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<!--[if gt IE 8]><!--> 
+    
+    <html class="no-js"> <!--<![endif]-->
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="description" content="A little about what I, Frankie Valentine, am working on and daily life jingles.">
+        <meta name="description" content="A little about what I am working on, tutorials, and tech reviews!">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <title>Blog - Valentine Dev</title>
@@ -18,7 +20,9 @@
         <link rel="stylesheet" type="text/css" href="../css/blog.css">
 
         <!-- Custom Fonts / Icons -->
-        <link rel="stylesheet" href="../css/font-awesome.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css" />
+        <link href="css/materialdesignicons.min.css" media="all" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 
         <!-- Animate -->
         <link rel="stylesheet" href="../css/animate.css">
@@ -46,11 +50,6 @@
                     <li class="nav-item active">
                         <a class="nav-link" href="#">Blog
                         <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="cv.html">
-                            CV
-                        </a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="hireme.html">
@@ -93,13 +92,78 @@
         <hr>
     </div>
 
+    <!-- JUMBO -->
     <div class="container">
         <div class="jumbotron jumbotron-fluid">
             <h1 class="display-3">Blog</h1>
         </div>
+        <p class="lead">Tutorials, tech reviews, daily life jingles, and some photos.</p>
     </div>
 
-    <!-- Footer -->
+    <!-- IMAGES (3 vertical/3 landscape) -->
+    <div class="container">
+        <div class="row align-items-start">
+            <div class="col">
+                <a href="../blogposts/firstpost.html">
+                    <img class="img-thumbnail" src="../blogimages/blogthumb1.png">
+                </a>
+                <p class="blogtitle">
+                    So you want to be a developer?...
+                </p>
+            </div>
+            <div class="col">
+                <a href="../blogposts/setupmac.html">
+                    <img class="img-thumbnail" src="../blogimages/blogthumb2.png">
+                </a>
+                <p class="blogtitle">
+                    Get your Mac setup to develop.
+                </p>
+            </div>
+            <!-- <div class="col">
+                <a href="../blogposts/firstpost.html">
+                    <img class="img-thumbnail" src="../blogimages/">
+                </a>
+            </div>
+        </div>
+        <div class="row align-items-center">
+            <div class="col">
+                <a href="">
+                    <img class="img-thumbnail" src="../blogimages/">
+                </a>
+            </div>
+            <div class="col">
+                <a href="../blogposts/firstpost.html">
+                    <img class="img-thumbnail" src="../blogimages/day1.jpg">
+                </a>
+                
+            </div>
+            <div class="col">
+                <a href="../blogposts/firstpost.html">
+                    <img class="img-thumbnail" src="../blogimages/day1.jpg">
+                </a>
+            </div>
+        </div>
+        <div class="row align-items-end">
+            <div class="col">
+                <a href="../blogposts/firstpost.html">
+                    <img class="img-thumbnail" src="../blogimages/day1.jpg">
+                </a>
+            </div>
+            <div class="col">
+                <a href="../blogposts/firstpost.html">
+                    <img class="img-thumbnail" src="../blogimages/day1.jpg">
+                </a>
+            </div>
+            <div class="col">
+                <a href="../blogposts/firstpost.html">
+                    <img class="img-thumbnail" src="../blogimages/day1.jpg">
+                </a>
+            </div> -->
+        </div>
+    </div>
+
+
+    <!-- FOOTER -->
     <footer class="text-center">
             <div class="footer-above">
                 <div class="container">
@@ -108,7 +172,7 @@
                             <h3>Contact</h3>
                             <h6><em>I am always interested in working on new projects.</em></h6>
                             <p><i class="fa fa-phone"></i> 925-354-3942
-                                <br><i class="fa fa-fw fa-envelope-o"></i> <a href="mailto:frankievalentine9@gmail.com">Email</a>
+                                <br><i class="fa fa-fw fa-envelope-o"></i> <a class="colfoot" href="mailto:frankievalentine9@gmail.com">Email</a>
                             </p>
                         </div>
                         <div class="footer-col col-md-4">
@@ -135,7 +199,7 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a class="btn-social btn-outline" href="https://stackoverflow.com/users/7777067/frankie-valentine" target="_blank">
+                                    <a class="btn-social btn-outline" href="https://stackoverflow.com/users/7777067/frankie-valentine?tab=profile" target="_blank">
                                         <i class="fa fa-fw fa-stack-overflow"></i>
                                     </a>
                                 </li>
@@ -144,7 +208,7 @@
                         <div class="donate footer-col col-md-4">
                             <p>My site is <strong>free</strong> - with no ads, clickbait, popups, guest posts, or sponsored content.</p>
                             <p>Please consider donating so I can continue creating!</p>
-                            <form class="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                            <form class="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
                                 <input type="hidden" name="cmd" value="_s-xclick">
                                 <input type="hidden" name="hosted_button_id" value="8845Q4Q5U5RKJ">
                                 <input type="submit" name="submit" alt="PayPal - The safer, easier way to pay online!" class="btn btn-dark" value="Donate!">
@@ -159,7 +223,7 @@
                     <div class="row">
                         <div class="col-lg-12">
                             Copyright ValentineDev &copy; 2017 
-                            <p>Open source <a href="https://opensource.org/licenses/MIT">MIT</a>.
+                            <p>Open source <a class="colfoot" href="https://opensource.org/licenses/MIT">MIT</a>.
                         </div>
                     </div>
                 </div>

@@ -2,7 +2,9 @@
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<!--[if gt IE 8]><!--> 
+    
+    <html class="no-js"> <!--<![endif]-->
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,13 +13,15 @@
 
         <title>Valentine Dev - Freelance Developer and Designer - California</title>
         <!-- Bootstrap -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous" />
 
         <!-- Theme CSS -->
-        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
 
         <!-- Custom Fonts / Icons -->
-        <link rel="stylesheet" href="css/font-awesome.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css" />
+        <link href="css/materialdesignicons.min.css" media="all" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" />
 
         <!-- Animate -->
         <link rel="stylesheet" href="css/animate.css">
@@ -30,7 +34,10 @@
                 <div class="navbar-nav-scroll">
                 <ul class="navbar-nav bd-navbar-nav flex-row">
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html">
+                        <img class="logo" src="images/logo1.png" />
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
                             Frankie Valentine
                         </a>
                     </li>
@@ -42,11 +49,6 @@
                     <li class="nav-item">
                         <a class="nav-link" href="views/blogindex.html">
                             Blog
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="views/cv.html">
-                            CV
                         </a>
                     </li>
                     <li class="nav-item">
@@ -80,7 +82,7 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="btn-top-social" href="https://stackoverflow.com/users/7777067/frankie-valentine" target="_blank">
+                    <a class="btn-top-social" href="https://stackoverflow.com/users/7777067/frankie-valentine?tab=profile" target="_blank">
                         <i class="fa fa-fw fa-stack-overflow"></i>
                     </a>
                 </li>
@@ -121,16 +123,40 @@
             <div class="col">
                 <ul class="list-group">
                     <li class="list-group-item d-flex justify-content-between align-items-center">
-                        Front End Development
-                        <span class="badge badge-primary badge-pill">10</span>
+                        Planning and Project Roadmap
+                        <span class="badge">
+                            <i class="fa fa-bullhorn fa-2x"></i>
+                        </span>
                     </li>
                     <li class="list-group-item d-flex justify-content-between align-items-center">
-                        Back End Development
-                        <span class="badge badge-primary badge-pill">8</span>
+                        Design
+                        <span class="badge">
+                            <i class="fa fa-paint-brush fa-2x"></i>
+                        </span>
                     </li>
                     <li class="list-group-item d-flex justify-content-between align-items-center">
-                        Maintenance
-                        <span class="badge badge-primary badge-pill">9</span>
+                        Code / Front-end and back-end development
+                        <span class="badge">
+                            <i class="fa fa-code fa-2x"></i>
+                        </span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        Optimization
+                        <span class="badge">
+                            <i class="fa fa-rocket fa-2x"></i>
+                        </span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        Promoting / Social media and SEO
+                        <span class="badge">
+                            <i class="fa fa-globe fa-2x"></i>
+                        </span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        Analytics
+                        <span class="badge">
+                            <i class="fa fa-pie-chart fa-2x"></i>
+                        </span>
                     </li>
                 </ul>
             </div>
@@ -144,16 +170,54 @@
             <div class="col">
                 <ul class="list-group">
                     <li class="list-group-item d-flex justify-content-between align-items-center">
-                        HTML
-                        <span class="badge badge-primary badge-pill">10</span>
+                        HTML5
+                        <span class="badge">
+                            <i class="mdi mdi-language-html5 mdi-24px"></i>
+                        </span>
                     </li>
                     <li class="list-group-item d-flex justify-content-between align-items-center">
                         CSS3
-                        <span class="badge badge-primary badge-pill">8</span>
+                        <span class="badge">
+                            <i class="mdi mdi-language-css3 mdi-24px"></i>
+                        </span>
                     </li>
                     <li class="list-group-item d-flex justify-content-between align-items-center">
                         JavaScript
-                        <span class="badge badge-primary badge-pill">9</span>
+                        <span class="badge">
+                            <i class="mdi mdi-language-javascript mdi-24px"></i>
+                        </span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        Bootstrap
+                        <span class="badge">
+                            <i class="mdi mdi-bootstrap mdi-24px"></i>
+                        </span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        Wordpress
+                        <span class="badge">
+                            <i class="mdi mdi-wordpress mdi-24px"></i>
+                        </span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        Vue.js
+                        <span class="badge">
+                            <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+                                <path fill="#000000" d="M2,3H5.5L12,15L18.5,3H22L12,21L2,3M6.5,3H9.5L12,7.58L14.5,3H17.5L12,13.08L6.5,3Z" />
+                            </svg>
+                        </span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        UI/UX
+                        <span class="badge">
+                            <i class="mdi mdi-television-guide mdi-24px"></i>
+                        </span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        Database Management
+                        <span class="badge">
+                            <i class="mdi mdi-database mdi-24px"></i>
+                        </span>
                     </li>
                 </ul>
             </div>
@@ -166,24 +230,27 @@
             <div class="row space">
                 <div class="col-sm">
                     <h5>Dev Anthem Agency</h5>
-                    <p>A web development agency dedicated to 
-                        advancing freelancer's portfolios, providing
-                        quality sites at a minimal cost, 
-                        and progressive enhancement of the web.
-                    </p>
+                        <p>
+                            A web development agency dedicated to 
+                            advancing freelancer's portfolios, providing
+                            quality sites at a minimal cost, 
+                            and progressive enhancement of the web.
+                        </p>
                 </div>
                 <div class="col-sm">
                     <h5>Tab Tracker</h5>
-                        <p>A short project built using the Vue.js framework 
-                        used to track guitar tablature.
-                        This used the MySQL database.
+                        <p>
+                            A short project used to track guitar tablature built using 
+                            Vue.js and MySQL database.
                         </p>
                 </div>
                 <div class="col-sm">
                     <h5>YelpCamp</h5>
-                    <p>My bootcamp final project, a campers review application, built 
-                    using Bootstrap, JavaScript, and jQuery. 
-                    This project uses MongoDB for the database.</p>
+                        <p>
+                            My bootcamp final project, a campers review application, built 
+                            using Bootstrap, JavaScript, and jQuery. 
+                            This project uses MongoDB for the database.
+                        </p>
                 </div>
             </div>
         </div>
@@ -199,7 +266,7 @@
                         <h3>Contact</h3>
                         <h6><em>I am always interested in working on new projects.</em></h6>
                         <p><i class="fa fa-phone"></i> 925-354-3942
-                            <br><i class="fa fa-fw fa-envelope-o"></i> <a href="mailto:frankievalentine9@gmail.com">Email</a>
+                            <br><i class="fa fa-fw fa-envelope-o"></i> <a class="colfoot" href="mailto:frankievalentine9@gmail.com">Email</a>
                         </p>
                     </div>
                     <div class="footer-col col-md-4">
@@ -226,7 +293,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a class="btn-social btn-outline" href="https://stackoverflow.com/users/7777067/frankie-valentine" target="_blank">
+                                <a class="btn-social btn-outline" href="https://stackoverflow.com/users/7777067/frankie-valentine?tab=profile" target="_blank">
                                     <i class="fa fa-fw fa-stack-overflow"></i>
                                 </a>
                             </li>
@@ -235,7 +302,7 @@
                     <div class="donate footer-col col-md-4">
                         <p>My site is <strong>free</strong> - with no ads, clickbait, popups, guest posts, or sponsored content.</p>
                         <p>Please consider donating so I can continue creating!</p>
-                        <form class="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                        <form class="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
                             <input type="hidden" name="cmd" value="_s-xclick">
                             <input type="hidden" name="hosted_button_id" value="8845Q4Q5U5RKJ">
                             <input type="submit" name="submit" alt="PayPal - The safer, easier way to pay online!" class="btn btn-dark" value="Donate!">
@@ -250,7 +317,7 @@
                 <div class="row">
                     <div class="col-lg-12">
                         &copy; 2017 Frankie Valentine. All rights reserved.
-                        <p>Open source <a href="https://opensource.org/licenses/MIT">MIT</a>.
+                        <p>Open source <a class="colfoot" href="https://opensource.org/licenses/MIT">MIT</a>.
                     </div>
                 </div>
             </div>

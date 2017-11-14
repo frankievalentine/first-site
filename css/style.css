@@ -1,5 +1,7 @@
 body {
-    font-family: "Avenir Next", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, "Avenir Next",
+    "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", 
+    "Fira Sans", "Droid Sans", "Helvetica Neue",
 }
 
 h3 {
@@ -9,9 +11,8 @@ h3 {
 
 a,
 a:focus,
-a:active,
-a.active {
-    color: #F5F7FA;
+a:active {
+    color: black;
     outline: none;
 }
 
@@ -41,11 +42,6 @@ li {
     display: inline-block;
 }
 
-.animated {
-    animation-duration: .75s;
-    animation-fill-mode: both;
-}
-
 .jumbotron {
     background-color: white;
     padding-top: 20px;
@@ -56,6 +52,14 @@ li {
     padding-top: 20px;
     width: 300px;
     height: 347px;
+}
+
+.colfoot {
+    color: #F5F7FA;
+}
+
+.logo {
+    padding-right: 3px;
 }
 
 .donate {
@@ -87,6 +91,7 @@ li {
     padding: 15px 15px 15px 15px;
     border-radius: 6px;
     color: #4A89DC;
+    font-family: "Avenir Next";
     font-size: 16px;
     border: 1px solid #F5F7FA;
     display: inline-block;

@@ -9,7 +9,7 @@
  */
 
 .animated {
-  animation-duration: .50s;
+  animation-duration: 1.3s;
   animation-fill-mode: both;
 }
 
