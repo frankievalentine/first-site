@@ -4,11 +4,6 @@ body {
     "Fira Sans", "Droid Sans", "Helvetica Neue",
 }
 
-h3 {
-    margin-top: 50px;
-    margin-bottom: 10px;
-}
-
 a,
 a:focus,
 a:active {
@@ -24,15 +19,22 @@ footer {
     color: white;
 }
 
+footer h3 {
+    margin-bottom: 30px;
+}
+
 footer .footer-above {
-    padding-top: 5px;
-    padding-bottom: 30px;
+    padding-top: 50px;
     background-color: #2C3E50;
 }
 
 footer .footer-below {
     padding: 25px 0;
     background-color: #233140;
+}
+
+footer .footer-col {
+    margin-bottom: 20px;
 }
 
 li {
@@ -43,6 +45,11 @@ li {
     background-color: white;
     padding-top: 20px;
     padding-bottom: 5px;
+}
+
+.marfix {
+    margin-top: 50px;
+    margin-bottom: 10px;
 }
 
 .me {
@@ -63,7 +70,6 @@ li {
 .donate {
     font-size: 14px;
     text-align: left;
-    padding: 50px 10px 10px 10px;
 }
 
 .navbar {
