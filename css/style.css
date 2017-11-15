@@ -25,12 +25,9 @@ footer {
 }
 
 footer .footer-above {
-    padding-top: 50px;
+    padding-top: 5px;
+    padding-bottom: 30px;
     background-color: #2C3E50;
-}
-
-footer .footer-col {
-    margin-bottom: 50px;
 }
 
 footer .footer-below {
