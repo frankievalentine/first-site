@@ -1,7 +1,7 @@
 body {
     font-family: -apple-system, BlinkMacSystemFont, "Avenir Next",
     "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", 
-    "Fira Sans", "Droid Sans", "Helvetica Neue",
+    "Fira Sans", "Droid Sans", "Helvetica Neue";
 }
 
 a,
@@ -86,7 +86,7 @@ li {
     color: white;
     letter-spacing: 1px;
     border-radius: 6px;
-    padding: 6px 10px 5px;
+    padding: 6px 10px 5px 15px;
     margin-right: 5px;
 }
 
@@ -95,7 +95,8 @@ li {
     padding: 15px 15px 15px 15px;
     border-radius: 6px;
     color: #4A89DC;
-    font-family: "Avenir Next";
+    font-family: "Avenir Next", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", 
+    "Fira Sans", "Droid Sans", "Helvetica Neue";
     font-size: 16px;
     border: 1px solid #F5F7FA;
     display: inline-block;
