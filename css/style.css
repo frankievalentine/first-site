@@ -48,7 +48,7 @@ li {
 }
 
 .marfix {
-    margin-top: 50px;
+    margin-top: 40px;
     margin-bottom: 10px;
 }
 
@@ -67,6 +67,15 @@ li {
     padding-top: 4px;
 }
 
+.noborder {
+    border: none;
+}
+
+.noborder1 {
+    border: none;
+    padding-top: 15px;
+    padding-bottom: 40px;
+}
 .donate {
     font-size: 14px;
     text-align: left;
@@ -88,6 +97,23 @@ li {
     border-radius: 6px;
     padding: 6px 10px 5px 15px;
     margin-right: 5px;
+}
+
+.badge-success {
+    background-color: #1db954;
+    color: #233140;
+    font-size: 16px;
+    font-family: "Helvetica Neue";
+    font-weight: 600;
+    letter-spacing: .05px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.badge-dark {
+    font-size: 16px;
+    font-weight: 600;
+    background-color: #233140;
 }
 
 .bubble {
@@ -151,8 +177,4 @@ li {
 
 .btn-dark:hover {
    color: #18BC9C;
-}
-
-.space {
-    padding-bottom: 50px;
 }
