@@ -147,3 +147,19 @@ li {
 .btn-dark {
     cursor: pointer;
 }
+
+#myBtn {
+    display: none;
+    font-size: 12px;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    padding: 9px;
+    border-radius: 10px;
+}
