@@ -18,6 +18,7 @@ a:active {
 
 a:hover {
     color: #18BC9C;
+    text-decoration: none;
 }
 
 footer {
