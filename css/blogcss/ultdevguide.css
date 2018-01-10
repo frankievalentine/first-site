@@ -1,0 +1,25 @@
+body {
+    background-color: rgb(245, 245, 245);
+    color: slategray;
+}
+
+h1 {
+    padding-bottom: 50px;
+}
+
+a {
+    color: lightcoral;
+}
+
+a:hover {
+    color: lightcoral;
+    text-decoration: none;
+}
+
+.foot:hover {
+    color: rgba(0,0,0,.5);
+}
+
+.foot {
+    color: rgba(0,0,0,.5);
+}
