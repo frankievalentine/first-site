@@ -1,0 +1,89 @@
+body {
+    background-color: rgb(245, 245, 245);
+    color: slategray;
+}
+
+h1 {
+    padding-bottom: 50px;
+}
+
+h2 {
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+p {
+    margin: 10px 0 10px 0;
+}
+
+a {
+    color: lightcoral;
+}
+
+a:hover {
+    color: lightcoral;
+    text-decoration: none;
+}
+
+hr {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+li {
+    padding: 10px 0 5px 0;
+}
+
+code {
+    margin: 20px 0 20px 0;
+    padding: 4px 10px 4px 10px;
+    font-size: 75%;
+    color: black;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 4px;
+    border-spacing: 5px;
+    display: block;
+}
+
+kbd {
+    color: black;
+    background-color: white;
+    font-size: 80%;
+}
+
+.img-thumbnail {
+    margin: 15px 0 15px 0;
+}
+
+.headline {
+    padding-bottom: 30px;
+}
+
+.inline {
+    display: inline
+}
+
+.nolist {
+    list-style: none;
+}
+
+.foot:hover {
+    color: rgba(0,0,0,.5);
+}
+
+.foot {
+    color: rgba(0,0,0,.5);
+}
+
+.string {
+    color: #9c9;
+}
+
+.setid {
+    color: lightskyblue;
+}
+
+.punctuate {
+    color: darkgoldenrod;
+}

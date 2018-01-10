@@ -11,14 +11,14 @@
         <meta name="description" content="My first blog post, more to come :)">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Get your Mac setup to develop.</title>
+        <title>Get your Mac setup to develop, in 2018</title>
 
         <!-- Bootstrap -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
             crossorigin="anonymous" />
 
         <!-- Theme CSS -->
-        <link rel="stylesheet" type="text/css" href="css/blog.css" />
+        <link rel="stylesheet" type="text/css" href="../css/blogcss/setupmac.css" />
 
         <!-- Custom Fonts / Icons -->
         <link rel="stylesheet" href="css/font-awesome.min.css" />
@@ -26,7 +26,7 @@
         <link href="https://fonts.googleapis.com/css?family=Arimo" rel="stylesheet" />
 
         <!-- Animate -->
-        <link rel="stylesheet" href="css/animate.css">
+        <link rel="stylesheet" href="../css/animate.css">
     </head>
 
     <body class="animated fadeIn">
@@ -41,7 +41,7 @@
                     <ul class="navbar-nav bd-navbar-nav flex-row">
                         <li id="top" class="nav-item">
                             <a class="nav-link" href="../views/blogindex.html">
-                                Back to Blog
+                                Back to Blog Index
                             </a>
                         </li>
                     </ul>
@@ -49,19 +49,843 @@
             </header>
         </div>
 
-        <!-- Post -->
         <div class="container">
             <div class="text-center">
-                <h1>In progress... come back for the post soon.</h1>
+                <h1>Setup your Mac for development, in 2018.</h1>
+                <hr class="headline">
             </div>
         </div>
 
+        <div class="container">
+            <div class="text-right">
+                <date>January 9th, 2018</date>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                </div>
+                <div class="col-6">
+                    <h2>Introduction</h2>
+                    <p>
+                        If you are brand new to a MacOS development environment then this guide is for you. This is all considering you just got
+                        your new laptop or desktop and want to get set up to have all the necessary tools to begin development.
+                    </p>
+                    
+                    <h4>Goals</h4>
+                    <p>
+                        The installs will pertain to both front and back end web development. I still have much to learn, but this is the process
+                        that I used to setup my Mac to fuel my development environment.
+                    </p>
+                    <p>
+                        This was completed to my preferences and is my suggested method to getting set up. It is used to be a guide and that alone!
+                        Of course, any other questions, Google or <a href="https://stackoverflow.com/" target="_blank">StackOverflow</a> will be your best bet.
+                    </p>
+                    
+                    <p>
+                        By the end of the setup the goal is for you to be ready to go with your new setup. I hope you enjoy setting it all up as
+                        much as I did!
+                    </p>
+                    <hr>
+                    <h2>Terminal and System Preferences</h2>
+                    <p>
+                        Open your Terminal via the search bar in the top right corner. This is also called
+                        <i class="fa fa-search" aria-hidden="true"></i> <em>Spotlight</em> which is a quick way to pull up applications on your system. When the Terminal is up make sure you use
+                        the command
+                        <code class="inline">“pwd”</code> to show where you are located in the system (i.e. /Users/you).
+                    </p>
+                    
+                    <p>
+                        If at any point the following commands give you a permission error. This means you are not granted Administer privileges
+                        to utilize the Command Line. You will have to use the “sudo” command before and type in your password in Terminal.
+                    </p>
+                    
+                    <img class="img-thumbnail" src="../blogimages/setupmac/sudo-screenshot.jpg">
+                    
+                    <p>
+                        The following commands will greatly increase the accessibility of your Mac during development.
+                    </p>
+                    
+                    <p>
+                        <u>Show Library folder</u>
+                    </p>
+                    
+                    <code>
+                        chflags nohidden ~/Library
+                    </code>
+                    
+                    <p>
+                        <u>Show hidden files</u>
+                    </p>
+                    
+                    <code>
+                        defaults write com.apple.finder AppleShowAllFiles YES
+                    </code>
+                    
+                    <p>
+                        <u>Show path bar</u>
+                    </p>
+                    
+                    <code>
+                        defaults write com.apple.finder ShowPathbar -bool true
+                    </code>
+                    
+                    <p>
+                        <u>Show status bar</u>
+                    </p>
+                    
+                    <code>
+                        defaults write com.apple.finder ShowStatusBar -bool true
+                    </code>
+                    
+                    <p>
+                        Go to <i class="fa fa-spin fa-cog" aria-hidden="true"></i> System Preferences for the following:
+                    </p>
+                    
+                    <p>
+                        <ul>
+                            <li>
+                                Keyboard > Text > Disable “Correct spelling automatically”
+                            </li>
+                            <li>
+                                Security and Privacy > FileVault > On - makes sure SSD is securely encrypted
+                            </li>
+                            <li>
+                                Security and Privacy > Firewall > On
+                            </li>
+                            <li>
+                                Security and Privacy > General > Allow App Store and identified developers
+                            </li>
+                            <li>
+                                File Sharing > Off
+                            </li>
+                            <li>
+                                Users and Groups > Login Items > Spectacle (if you choose to download), f.lux
+                            </li>
+                        </ul>
+                    </p>
+                <hr>
+                    <!-- Setup -->
+                    <h2>Let’s get setup.</h2>
+                    
+                    <p>
+                        Important to note, these first two steps are
+                        <em>incredibly</em> important.
+                    </p>
+                    
+                    <p>
+                        As soon as you get through the initial setup. Open up the Mac App Store in your dock or through the Finder. Go to Updates
+                        and check for the latest patches, security, and system updates.
+                    </p>
+                    
+                    <img class="img-thumbnail" src="../blogimages/setupmac/checkupdates.png">
+                    
+                    <p>
+                        Keeping your system up to date is crucial. Keep an eye out for updates on the regular.
+                    </p>
+                    
+                    <p>
+                        Post update, you’ll need to install the Command Line Tools
+                        <a href="https://developer.apple.com/download/more" target="_blank">here</a>. It will ask you to sign in using your Apple ID. If you do not see it listed immediately, search “Command Line
+                        Tools.” You’ll want the latest release considering you have High Sierra.
+                    </p>
+
+                    <h4>Homebrew</h4>
+                    
+                    <p>
+                        <a href="https://brew.sh" target="_blank">Homebrew</a>, it’s the missing package manager for MacOS, and quite powerful at that.
+                    </p>
+                    
+                    <p>
+                        Copy and paste the following code into your terminal.
+                    </p>
+                    
+                    <code>
+                        /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+                    </code>
+                    
+                    <p>
+                        The following section is completely
+                        <strong>optional</strong>. Getting more familiar with Terminal and the Command Line is a huge benefit to anyone, in my opinion.
+                        This step will allow us to install applications on the App Store from Terminal.
+                    </p>
+                    
+                    <code>
+                        brew <span class="setid">install</span> mas
+                    </code>
+                    
+                    <p>
+                        You’ll want to sign in to the App Store using:
+                    </p>
+
+                    <img class="img-thumbnail" src="../blogimages/setupmac/mas-ss.png">
+                    
+                    <code>
+                        mas signin email@email.com
+                    </code>
+                    
+                    <p>
+                        Please view the documentation for more here:
+                        <a href="https://github.com/mas-cli/mas" target="_blank">mas-cli</a>.
+                    </p>
+                    
+                    <p>
+                        Let’s get your Brewfile setup. This will be a list of all programs to install from the App Store using a single command.
+                        Create the file using the “touch” command shown below.
+                    </p>
+                    
+                    <code>
+                        <span class="setid">touch</span> Brewfile
+                    </code>
+                    
+                    <p>
+                        Edit the file using TextEdit or by typing:
+                    </p>
+                    
+                    <code>
+                        nano Brewfile
+                    </code>
+                    
+                    <p>
+                        Save the file by typing
+                        <kbd>Control</kbd> +
+                        <kbd>O</kbd>
+                    </p>
+                    
+                    <p>
+                        Exit the file by typing
+                        <kbd>Control</kbd> +
+                        <kbd>X</kbd>
+                    </p>
+                    
+                    <p>
+                        Our Brewfile contents:
+                    </p>
+                    
+                    <code>
+                        <p>tap <span class="string">'caskroom/cask'</span></p>
+                        <br>
+                        <p>brew <span class="string">'git'</span></p>
+                        <p>brew <span class="string">'npm'</span></p>
+                        <p>brew <span class="string">'yarn'</span></p>
+                        <p>brew <span class="string">'grunt'</span></p>
+                        <p>brew <span class="string">'node'</span></p>
+                        <br>
+                        <br>
+                        <p>cask <span class="string">'visual-studio-code'</span></p>
+                        <p>cask <span class="string">'atom'</span></p>
+                        <p>cask <span class="string">'flux'</span></p>
+                        <p>cask <span class="string">'google-chrome'</span></p>
+                        <p>cask <span class="string">'firefox'</span></p>
+                        <p>cask <span class="string">'vlc'</span></p>
+                        <p>cask <span class="string">'spotify'</span></p>
+                        <br>
+                        <br>
+                        <p>mas <span class="string">'Slack'</span>, <span class="setid">id: 803453959</span></p>
+                        <p>mas <span class="string">'Bear'</span>, <span class="setid">id: 1091189122</span></p>
+                        <p>mas <span class="string">'Trello'</span>, <span class="setid">id: 1278508951</span></p>
+                        <p>mas <span class="string">'CopyClip'</span>, <span class="setid">id: 595191960</span></p>
+                        <p>mas <span class="string">'Pocket'</span>, <span class="setid">id: 568494494</span></p>
+                        <p>mas <span class="string">'The Unarchiver'</span>, <span class="setid">id: 425424353</span></p>
+                    </code>
+                    
+                    <p>
+                        Save the file and head back to Terminal. The following code will install all the applications listed in the Brewfile.
+                    </p>
+                    
+                    <code>
+                        brew bundle install
+                    </code>
+                
+                    <h4>Applications included</h4>
+                    <p>
+                        These applications are your choice to download. You can add or remove any you wish from the file. If you know of some more
+                        programs that may be a cask you would like to add check out
+                        <a href=“https://caskroom.github.io/search” target="_blank">Cask Search</a>.
+                    </p>
+                    
+                    <p>
+                        <ul class="nolist">
+                            <li>
+                                <a href="https://caskroom.github.io/search" target="_blank">Cask</a> 
+                                is an extension of Homebrew and it allows you to install 
+                                applications with one command. It brings together
+                                3888 Casks maintained by 5169 contributors.
+                            </li>
+                            <li>
+                                <a href="https://git-scm.com" target="_blank">Git</a> 
+                                is used for 
+                                version control on our system.
+                            </li>
+                    <hr>
+                    <br>
+                        <h6>Package Managers</h6>
+                            <li>
+                                <a href="https://www.npmjs.com" target="_blank">npm</a> 
+                                is a package manager vital for use in JavaScript development.
+                            </li>
+                            <li>
+                                <a href="https://yarnpkg.com/en" target="_blank">Yarn</a> 
+                                is another package 
+                                manager for your code.
+                            </li>
+                    <hr>
+                            <li>
+                                <a href="https://nodejs.org/en" target="_blank">node</a>
+                                is a JavaScript runtime used for back-end development.
+                            </li>
+                            <li>
+                                <a href="https://gruntjs.com" target="_blank">Grunt</a>
+                                is a task runner 
+                                for automation purposes, such as, magnification, 
+                                compilation, unit testing, listing, etc.
+                            </li>
+                            <li>
+                                <a href="https://code.visualstudio.com" target="_blank">Visual Studio Code</a> 
+                                will be our text editor of choice. It is wildly popular 
+                                and is also built using JavaScript and another 
+                                up and coming language called TypeScript.
+                            </li>
+                            <li>
+                                <a href="https://atom.io" target="_blank">Atom</a> 
+                                is another text editor. It’s good 
+                                to have a couple on your system.
+                            </li>
+                            <li>
+                                <a href="https://justgetflux.com" target="_blank">f.lux</a> 
+                                is display technology that 
+                                will save your eyes. Necessary for long coding stints. Your eyeballs will
+                                thank you.
+                            </li>
+                            <li>
+                                <a href="https://www.google.com/chrome/browser/desktop/index.html" target="_blank">Google Chrome</a> 
+                                is our web browser of choice. The Dev Tools are 
+                                second to none and you will use them daily
+                                in your development.
+                            </li>
+                            <li>
+                                <a href="https://www.mozilla.org/en-US/firefox" target="_blank">Firefox</a>
+                                is another great browser.
+                            </li>
+                            <li>
+                                <a href="https://www.videolan.org/vlc/download-macosx.html" target="_blank">VLC</a> 
+                                is a free and open source multimedia player.
+                            </li>
+                            <li>
+                                <a href="https://www.spotify.com/us" target="_blank">Spotify</a> 
+                                is my daily music streaming application.
+                            </li>
+                            <li>
+                                <a href="https://slack.com" target="_blank">Slack</a> 
+                                is a communication application for teams. You will use 
+                                this application quite a bit to connect with
+                                clients, your new development team, or your family and friends!
+                            </li>
+                            <li>
+                                <a href="http://www.bear-writer.com" target="_blank">Bear</a> 
+                                is a great writing application. I use it to take all 
+                                of my notes for courses, comes with editor that
+                                includes functionality for inputting code blocks.
+                            </li>
+                            <li>
+                                <a href="https://trello.com" target="_blank">Trello</a>
+                                is my project management application of choice. I 
+                                organize all of my projects via their boards UI.
+                                It is a great organizational tool, especially for freelancers.
+                            </li>
+                            <li>
+                                <a href="https://itunes.apple.com/us/app/copyclip-clipboard-history-manager/id595191960?mt=12" target="_blank">CopyClip</a> 
+                                is a clipboard manager for Mac. No bigger 
+                                frustration when you lose your last Copy. This will store
+                                the history of the clipboard from the status bar apps in MacOS.
+                            </li>
+                            <li>
+                                <a href="https://getpocket.com" target="_blank">Pocket</a> 
+                                is a visually active save for later application. Insert articles, 
+                                videos, notes, and pretty much anything else.
+                            </li>
+                            <li>
+                                <a href="https://theunarchiver.com" target="_blank">The Unarchiver</a> 
+                                is a tool for opening RAR files on Mac. You can direct any 
+                                file to a specific location on
+                                your Mac.
+                            </li>
+                        </ul>
+                    </p>
+                    
+                    <h4>Additional programs <strong>NOT</strong> in our Brewfile.</h4>
+                    <p>
+                        <ul class="nolist">
+                            <li>
+                                <a href="http://magnet.crowdcafe.com" target="_blank">Magnet</a> 
+                                is a workspace organizer for Mac. This is a
+                                <em>paid</em> App located in the App Store. 
+                                The Download link on the site will direct you. 
+                                I recommend it over Spectacle.
+                            </li>
+                            <li>
+                                <a href="https://www.spectacleapp.com" target="_blank">Spectacle</a> 
+                                is an open source workspace organizer for Mac.
+                            </li>
+                            <li>
+                                <a href="https://gettaskr.now.sh" target="_blank">Taskr</a> 
+                                is a beautifully built open source task manager application.
+                            </li>
+                            <li>
+                                <a href="https://www.getpostman.com" target="_blank">Postman</a> 
+                                is an Application Programming Interface (API) 
+                                development Graphical User Interface (GUI).
+                            </li>
+                            <li>
+                                <a href="https://www.sketchapp.com" target="_blank">Sketch</a> 
+                                is a design application used to create 
+                                vector graphics, storyboards, and wireframes.
+                            </li>
+                        </ul>
+                    </p>
+                <hr>   
+                    <!-- Bash -->
+                    <h2>Let’s Talk About Bash</h2>
+                    
+                    <p>
+                        Everything is good to go with Homebrew and our Applications.
+                    </p>
+                    
+                    <p>
+                        When we talk about 
+                        <a href="https://en.wikipedia.org/wiki/Bash_(Unix_shell)" target="_blank">Bash</a>
+                        we will be updating the 
+                        internals of the Terminal in our bash_profile dotfile.
+                    </p>
+                    
+                    <p>
+                        Create your bash dotfile in your home folder.
+                    </p>
+                    
+                    <code>
+                        <span class="setid">touch</span> .bash_profile
+                    </code>
+                    
+                    <p>
+                        We’ll want to make an alias script to keep Homebrew and our system clean and up to date.
+                    </p>
+                    
+                    <code>
+                        <span class="setid">alias</span> brewup=<span class="string">'brew update; brew upgrade; brew prune; brew cleanup; brew doctor'</span>
+                    </code>
+                    
+                    <p>
+                        Head back to Terminal and run the following command:
+                    </p>
+                    
+                    <code>
+                        <span class="setid">source</span> ~/.bash_profile
+                    </code>
+                    
+                    <p>
+                        Now in Terminal all we have to run is the alias command
+                        <code>brewup</code>to get Homebrew updating. 
+                        It’s a great idea to keep this updated daily, if not weekly.
+                    </p>
+                    
+                    <h4>Coloring scheme for Terminal</h4>
+                    
+                    <p>
+                        I have a color scheme setup for my Terminal. It goes a little something like this.
+                    </p>
+                    
+                    <code>
+                    <p><span class="setid">export</span>> PS1=<span class="string">"\[\033[36m\]\u\[\033[m\]@\[\033[32m\]\h:\[\033[33;1m\] \w\[\033[m\] \$ "</span></p>
+                    <p><span class="setid">export</span> CLICOLOR=1</p>
+                    <p><span class="setid">export</span> LSCOLORS=ExFxBxDxCxegedabagacad</p>
+                    </code>
+                    
+                <hr><!-- VSCODE -->
+                    <h2>Visual Studio Code</h2>
+                    
+                    <p>
+                        This will be my preferred setup and extensions for Visual Studio (VS) Code.
+                    </p>
+                    
+                    <p>
+                        Go ahead and open up VS Code.
+                    </p>
+                    
+                    <p>
+                        First, were going to view the Command Palette. The Command Palette is located under the View tab. Once it is clicked a drop
+                        down will appear and you will then search “>shell command: Install ‘code’ command in PATH” and hit
+                        <kbd>Enter</kbd>.
+                    </p>
+                    
+                    <p>
+                        This enables you to type
+                        <code class="inline">
+                            code ‘filename’
+                        </code>
+                        in Terminal to open up a file in VS Code.
+                    </p>
+                    
+                    <p>
+                        At the Welcome screen select both, 
+                        “Install support for JavaScript” and 
+                        “Install support for keyboard shortcuts of Atom.” (Also found
+                        <a href="https://marketplace.visualstudio.com/items?itemName=ms-vscode.atom-keybindings" target="_blank">here</a>)
+                    </p>
+                    
+                    <p>
+                        To view the keyboard shortcuts for Atom go
+                        <a href="https://blog.bugsnag.com/img/posts/atom-cheat-sheet.png" target="_blank">here</a>. 
+                        They will be considerably helpful with the 
+                        increasing the speed of your coding.
+                    </p>
+                    <br>
+                    <p>
+                        Themes are plentiful on VS Code. The one I have found to like the most is
+                        <a href="citylights.xyz" target="_blank">City Lights</a>. 
+                        Its minimal, colorful, and built by Yummygum.
+                    </p>
+
+                    <img class="img-thumbnail" src="../blogimages/setupmac/javascript-editor.png" target="_blank">
+                    <div class="text-right">
+                        <em>Image courtesy of <i class="fa fa-copyright" aria-hidden="true"></i><a href="https://yummygum.com/" target="_blank">Yummygum</a></em>
+                    </div>
+                    <p>
+                        My icon pack of choice is the
+                        <a href="https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme" target="_blank">Material Icon Theme</a>.
+                    </p>
+                    
+                    <h6>Extensions</h6>
+                    
+                    <p>
+                        Select the Extensions square located on the right hand side menu. I recommend searching and downloading these:
+                        <ul class="nolist">
+                            <li>
+                                <a href="https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode" target="_blank">
+                                    Prettier - Code Formatter
+                                </a>
+                                <li>
+                                    <a href="https://marketplace.visualstudio.com/items?itemName=eg2.vscode-npm-script" target="_blank">
+                                        npm support
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint" target="_blank">
+                                        ESLint
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://marketplace.visualstudio.com/items?itemName=CoenraadS.bracket-pair-colorizer" target="_blank">
+                                        Bracket Pair Colorizer
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-chrome" target="_blank">
+                                        Debugger for Chrome
+                                    </a>
+                                </li>
+                        </ul>
+                    </p>
+                    
+                <hr><!-- Git and SSH -->
+                    
+                    <h2>Git and SSH</h2>
+                    
+                    <p>
+                        Git will be used as a version control system for your code. You will constantly be committing and pushing code using Git.
+                        SSH will uniquely identify you (and your computer) when your computer is communicating with other computers. Imagine
+                        that. Just think of it as a fancy password. Both Heroku and Github require SSH.
+                    </p>
+                    <br>
+                    <p>
+                        <em>Git</em> first then. Let’s go to Terminal.
+                    </p>
+                    
+                    <code>
+                        <span class="setid">git</span> config --global user.name <span class="string">"First Last"</span> (keep the quotes)
+                    </code>
+
+                    <code>
+                        <span class="setid">git</span> config --global user.email <span class="string">"Email"</span> (keep the quotes)
+                    </code>
+                    
+                    <strong>
+                        Use the same email address for Heroku, Git, Github, and SSH.
+                    </strong>
+                    
+                    <p>
+                        Confirm the changes have been made using:
+                    </p>
+                    
+                    <code>
+                        <span class="setid">git</span> config --get user.name
+                        <br>
+                        <span class="setid">git</span> config --get user.email
+                    </code>
+                    
+                    <p>
+                        You should see your user name and email printed to the Terminal.
+                    </p>
+                
+                    <p>
+                        <u><em>Extra</em></u>: to have colored output in Git add this to Terminal:
+                    </p>
+                    
+                    <code>
+                        <span class="setid">git</span> config --global color.ui auto
+                    </code>
+                    
+                    <p>
+                        I have added some alias commands to my git config file. Take a look at yours yourself using VS Code and the Terminal.
+                    </p>
+                    
+                    <code>
+                        code ~/.gitconfig
+                    </code>
+                    
+                    <p>
+                        Mine looks like this.
+                    </p>
+
+                    <code>
+                        <br>
+                        [user]
+                            <ul class="nolist">
+                                <li>
+                                    name
+                                    <span class="punctuate">=</span> First Last
+                                </li>
+                                <li>
+                                    email
+                                    <span class="punctuate">=</span> student@example.com
+                                </li>
+                            </ul>
+                        [alias]
+                            <ul class="nolist">
+                                <li>
+                                    a
+                                    <span class="punctuate">=</span> add
+                                </li>
+                                <li>
+                                    ca
+                                    <span class="punctuate">=</span> commit -a
+                                </li>
+                                <li>
+                                    cam
+                                    <span class="punctuate">=</span> commit -am
+                                </li>
+                                <li>
+                                    s
+                                    <span class="punctuate">=</span> status
+                                </li>
+                                <li>
+                                    pom
+                                    <span class="punctuate">=</span> push origin master
+                                </li>
+                                <li>
+                                    pog
+                                    <span class="punctuate">=</span> push origin gh-pages
+                                </li>
+                                <li>
+                                    puom
+                                    <span class="punctuate">=</span> pull origin master
+                                </li>
+                                <li>
+                                    puog
+                                    <span class="punctuate">=</span> pull origin gh-pages
+                                </li>
+                                <li>
+                                    cob
+                                    <span class="punctuate">=</span> checkout -b
+                                </li>
+                            </ul>
+                        [color]
+                            <ul class="nolist">
+                                <li>
+                                    ui <span class="punctuate">=</span> auto
+                                </li>
+                            </ul>
+                    </code>
+                    
+                    <p>
+                        The alias commands allow me to just type
+                        <code>
+                            <span class="setid">git</span> pom
+                        </code> 
+                        instead of...
+                        <code>
+                            <span class="setid">git</span> push origin master
+                        </code>
+                        As a web developer you are always
+                        looking for shortcuts to your workflow.
+                    </p>
+                    
+                    <p>
+                        To see a list of your config settings in Terminal check it with:
+                    </p>
+                    
+                    <code>
+                        <span class="setid">git</span> config --list
+                    </code>
+                    
+                    <p>
+                        Boom.
+                        <em>SSH</em> now. 
+                        Again. SSH the fancy password. 
+                        Got it. Let’s check if you have one already.
+                    </p>
+                    
+                    <code>
+                        ls ~/.ssh/id_rsa
+                    </code>
+                    
+                    <p>
+                        This will return “No such file or directory” if you don’t have an SSH key yet.
+                    </p>
+                    
+                    <p>
+                        <a href="https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/">Generate a key</a> using:
+                    </p>
+
+                    <code>
+                        ssh-keygen -t rsa -b 4096 -C <span class="string">"student@example.com"</span>
+                    </code>
+
+                    <p>
+                        <strong>
+                            <code class="inline">student@example.com</code> 
+                            is your actual email that you used with Git.
+                        </strong>
+                    </p>
+                    <br>
+                    <p>
+                        You’ll be asked to enter a passphrase next. I suggest using one.
+                    </p>
+                    <br>
+                    <p>
+                        Expected result:
+                    </p>
+
+                    <code>
+                        <p>Generating public/private rsa key pair.</p>
+                        <p>Enter file in which to save the key (/Users/student/.ssh/id_rsa):</p>
+                        <p>Created directory '/Users/student/.ssh'.</p>
+                        <p>Enter passphrase (empty for no passphrase):</p>
+                        <p>Enter same passphrase again:</p>
+                        <p>Your identification has been saved in /Users/student/.ssh/id_rsa.</p>
+                        <p>Your public key has been saved in /Users/student/.ssh/id_rsa.pub.</p>
+                        <p>The key fingerprint is:</p>
+                        <p><span class="string">88:54:ab:77:fe:5c:c3:7s:14:37:28:8c:1d:ef:2a:8d student@example.com</span></p>
+                    </code>
+                    
+                    <p>
+                        <em>Public versus Private Keys</em>
+                        If you open
+                        <code>
+                            ~/.ssh/
+                        </code> 
+                        you will see both an “id_rsa” file and “id_rsa.pub”. The .pub is the public and can be shared freely, the _rsa must
+                        be kept a secret.
+                    </p>
+                    
+                    <p>
+                        Go ahead and add your generated key to the authentication agent using:
+                    </p>
+                    
+                    <code>
+                        ssh-add ~/.ssh/id_rsa
+                    </code>
+                    
+                    <p>
+                        You will be prompted your passphrase and the identity will be added.
+                    </p>
+                    
+                    <h3>gulp</h3>
+                    
+                    <p>
+                        <a href="https://gulpjs.com/" target="_blank">
+                            Gulp
+                        </a> 
+                        is another task runner that should be 
+                        installed on your system globally. The choice is yours which to use Grunt
+                        or Gulp.
+                    </p>
+
+                    <code>
+                        <span class="setid">npm install</span> --global gulp-cli
+                    </code>
+                    
+                    <h3>Ruby</h3>
+                    
+                    <p>
+                        Let’s get up to speed with Ruby, by having the Ruby Version Manager (ram) installed on your machine. This way we can be ready
+                        to use
+                        <a href="https://jekyllrb.com" target="_blank">Jekyll</a>, one of the most popular static site generators, if we please. 
+                        Also important to note we can make sure we
+                        have the updated Ruby version without messing 
+                        with Mac’s system build of it.
+                    </p>
+                    
+                    <p>
+                        Move to Terminal and input:
+                    </p>
+                    
+                    <code>
+                        \curl -sSL https://get.rvm.io | bash -s stable
+                    </code>
+                    
+                    <p>
+                        Run
+                        <code>
+                            rom list
+                        </code> 
+                        to see the full list of versions available. We’re going to want 2.4.0.
+                    </p>
+                    
+                    <code>
+                        rvm --default use 2.4.0
+                    </code>
+                    
+                    <p>
+                        Confirm using:
+                        <code>
+                            rvm -v
+                        </code>
+                    </p>
+                    
+                    <p>
+                        Next we’re going to want a package manager for Ruby. Necessary for most tasks in Ruby projects.
+                    </p>
+                    
+                    <code>
+                        gem <span class="setid">install</span> bundler
+                    </code>
+                    
+                    <h2>Conclusion</h2>
+                    <p>
+                        We’ve gone over a ton. You have a good setup to get going with your development. <i class="fa fa-handshake-o" aria-hidden="true"></i>
+                    </p>
+                    <p>
+                        Again, I thank those resources that I have listed in this guide.
+                        When I started researching what I needed for development I never came across an article
+                        that gave a particular order. I believe, in my opinion, this is a great start for any newcomer to MacOS.
+                        There could be a lot missing, but I believe this to be a
+                        great resource to get going. 
+                    </p>
+                    <p>
+                        Enjoy!
+                    </p>
+                </div>
+                <div class="col">
+                </div>
+            </div>
+        </div>
 
         <!-- Footer -->
         <footer class="text-right">
             <div class="container">
-                <a class="nav-link" href="#top">
-                    Top of post
+                <a class="foot nav-link" href="#top">
+                    Back to Top
                 </a>
             </div>
         </footer>
