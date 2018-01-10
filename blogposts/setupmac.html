@@ -8,7 +8,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="description" content="My first blog post, more to come :)">
+        <meta name="description" content="2018 MacOS Web Development First Run Setup Git VSCode Terminal">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <title>Get your Mac setup to develop, in 2018</title>
@@ -207,13 +207,13 @@
                     </p>
                     
                     <p>
-                        Copy and paste the following code into your terminal.
+                        Copy and paste the following code into your terminal to install Homebrew.
                     </p>
                     
                     <code>
                         /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
                     </code>
-                    
+                <hr>
                     <p>
                         The following section is completely
                         <strong>optional</strong>. Getting more familiar with Terminal and the Command Line is a huge benefit to anyone, in my opinion.
@@ -510,17 +510,14 @@
                     <p><span class="setid">export</span> LSCOLORS=ExFxBxDxCxegedabagacad</p>
                     </code>
                     
-                <hr><!-- VSCODE -->
+                <hr>
+                <!-- VSCODE -->
                     <h2>Visual Studio Code</h2>
-                    
-                    <p>
-                        This will be my preferred setup and extensions for Visual Studio (VS) Code.
-                    </p>
-                    
+
                     <p>
                         Go ahead and open up VS Code.
                     </p>
-                    
+                    <br>
                     <p>
                         First, were going to view the Command Palette. The Command Palette is located under the View tab. Once it is clicked a drop
                         down will appear and you will then search “>shell command: Install ‘code’ command in PATH” and hit
@@ -563,6 +560,8 @@
                         My icon pack of choice is the
                         <a href="https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme" target="_blank">Material Icon Theme</a>.
                     </p>
+
+                    <img class="img-thumbnail" src="../blogimages/setupmac/mdicons.png">
                     
                     <h6>Extensions</h6>
                     
@@ -571,28 +570,29 @@
                         <ul class="nolist">
                             <li>
                                 <a href="https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode" target="_blank">
-                                    Prettier - Code Formatter
+                                    Prettier
                                 </a>
-                                <li>
-                                    <a href="https://marketplace.visualstudio.com/items?itemName=eg2.vscode-npm-script" target="_blank">
-                                        npm support
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint" target="_blank">
-                                        ESLint
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="https://marketplace.visualstudio.com/items?itemName=CoenraadS.bracket-pair-colorizer" target="_blank">
-                                        Bracket Pair Colorizer
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-chrome" target="_blank">
-                                        Debugger for Chrome
-                                    </a>
-                                </li>
+                            </li>
+                            <li>
+                                <a href="https://marketplace.visualstudio.com/items?itemName=eg2.vscode-npm-script" target="_blank">
+                                    npm support
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint" target="_blank">
+                                    ESLint
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://marketplace.visualstudio.com/items?itemName=CoenraadS.bracket-pair-colorizer" target="_blank">
+                                    Bracket Pair Colorizer
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-chrome" target="_blank">
+                                    Debugger for Chrome
+                                </a>
+                            </li>
                         </ul>
                     </p>
                     
@@ -766,15 +766,10 @@
                             is your actual email that you used with Git.
                         </strong>
                     </p>
-                    <br>
-                    <p>
-                        You’ll be asked to enter a passphrase next. I suggest using one.
-                    </p>
-                    <br>
                     <p>
                         Expected result:
                     </p>
-
+                    
                     <code>
                         <p>Generating public/private rsa key pair.</p>
                         <p>Enter file in which to save the key (/Users/student/.ssh/id_rsa):</p>
@@ -786,10 +781,14 @@
                         <p>The key fingerprint is:</p>
                         <p><span class="string">88:54:ab:77:fe:5c:c3:7s:14:37:28:8c:1d:ef:2a:8d student@example.com</span></p>
                     </code>
-                    
+
                     <p>
-                        <em>Public versus Private Keys</em>
-                        If you open
+                        You’ll be asked to enter a passphrase next. I suggest using one.
+                    </p>
+                    <br>
+                    <p>
+                        <em>Public vs. Private Keys</em> |
+                        If you open:
                         <code>
                             ~/.ssh/
                         </code> 
@@ -821,7 +820,7 @@
                     </p>
 
                     <code>
-                        <span class="setid">npm install</span> --global gulp-cli
+                        npm <span class="setid">install</span> --global gulp-cli
                     </code>
                     
                     <h3>Ruby</h3>
@@ -875,11 +874,10 @@
                         We’ve gone over a ton. You have a good setup to get going with your development. <i class="fa fa-handshake-o" aria-hidden="true"></i>
                     </p>
                     <p>
-                        Again, I thank those resources that I have listed in this guide.
+                        Again, I credit and thank the resources that I have listed in this guide.
                         When I started researching what I needed for development I never came across an article
-                        that gave a particular order. I believe, in my opinion, this is a great start for any newcomer to MacOS.
-                        There could be a lot missing, but I believe this to be a
-                        great resource to get going. 
+                        that gave a particular order. I believe, in my opinion, 
+                        this is a great start for any newcomer to MacOS and web development.
                     </p>
                     <p>
                         Enjoy!
