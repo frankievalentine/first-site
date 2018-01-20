@@ -219,9 +219,19 @@
                     </code>
                 <hr>
                     <p>
-                        The following section is completely
-                        <strong>optional</strong>. Getting more familiar with Terminal and the Command Line is a huge benefit to anyone, in my opinion.
-                        This step will allow us to install applications on the App Store from Terminal.
+                        The following section on utilizing the App Store from the Terminal is completely
+                        <strong>optional</strong>. You can install each of these applications individually later on,
+                        but getting more familiar with Terminal and using the Command Line is a huge benefit to 
+                        any beginner, in my opinion.
+                    </p>
+
+                    <p>
+                        Please view the documentation before beggining here:
+                        <a href="https://github.com/mas-cli/mas" target="_blank">mas-cli</a>.
+                    </p>
+
+                    <p>
+                        Install the mas-cli using Homebrew:
                     </p>
                     
                     <code>
@@ -231,16 +241,15 @@
                     <p>
                         You’ll want to sign in to the App Store using:
                     </p>
-
-                    <img class="img-thumbnail" src="../blogimages/setupmac/mas-ss.png">
                     
                     <code>
                         mas signin email@email.com
                     </code>
+
+                    <img class="img-thumbnail" src="../blogimages/setupmac/mas-ss.png">
                     
                     <p>
-                        Please view the documentation for more here:
-                        <a href="https://github.com/mas-cli/mas" target="_blank">mas-cli</a>.
+                        Essentially, the mas-cli allows us to install multiple applications using a "Brewfile."
                     </p>
                     
                     <p>
@@ -259,18 +268,6 @@
                     <code>
                         nano Brewfile
                     </code>
-                    
-                    <p>
-                        Save the file by typing
-                        <kbd>Control</kbd> +
-                        <kbd>O</kbd>
-                    </p>
-                    
-                    <p>
-                        Exit the file by typing
-                        <kbd>Control</kbd> +
-                        <kbd>X</kbd>
-                    </p>
                     
                     <p>
                         Our Brewfile contents:
@@ -302,9 +299,21 @@
                         <p>mas <span class="string">'Pocket'</span>, <span class="setid">id: 568494494</span></p>
                         <p>mas <span class="string">'The Unarchiver'</span>, <span class="setid">id: 425424353</span></p>
                     </code>
+
+                    <p>
+                        Save the file by typing
+                        <kbd>Control</kbd> +
+                        <kbd>O</kbd>
+                    </p>
                     
                     <p>
-                        Save the file and head back to Terminal. The following code will install all the applications listed in the Brewfile.
+                        Exit the file by typing
+                        <kbd>Control</kbd> +
+                        <kbd>X</kbd>
+                    </p>
+                    
+                    <p>
+                        Head back to Terminal. The following code will install all the applications listed in the Brewfile.
                     </p>
                     
                     <code>
@@ -316,6 +325,7 @@
                     </p>
                 
                     <h4>Applications included</h4>
+                    
                     <p>
                         These applications are your choice to download. You can add or remove any you wish from the file. If you know of some more
                         programs that may be a cask you would like to add search to see if it's been added. If you're
