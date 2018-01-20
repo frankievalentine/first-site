@@ -87,3 +87,7 @@ kbd {
 .punctuate {
     color: darkgoldenrod;
 }
+
+.vscode {
+    margin: 0;
+}
