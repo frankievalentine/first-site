@@ -14,3 +14,12 @@ function topFunction() {
     document.body.scrollTop = 0; // For Safari
     document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
+
+// day/night toggle functionality
+// $("#toggle-box-checkbox").on("change", function() {
+//   if (this.checked) {
+//     $("body").addClass("night");
+//   } else {
+//     $("body").removeClass("night");
+//   }
+// });
