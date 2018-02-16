@@ -52,6 +52,11 @@ kbd {
     font-size: 80%;
 }
 
+.footer-below {
+    padding: 25px 0;
+    background-color: #233140;
+}
+
 .img-thumbnail {
     margin: 10px 0 15px 0;
 }

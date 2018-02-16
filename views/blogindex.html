@@ -84,6 +84,12 @@
                             <i class="fa fa-fw fa-stack-overflow"></i>
                         </a>
                     </li>
+                    <li class="toggler">
+                        <label class="switch">
+                            <input id="toggle-box-checkbox" type="checkbox">
+                            <span class="slider round"></span>
+                        </label>
+                    </li>
                 </ul>
             </header>
         </div>
@@ -106,15 +112,15 @@
         <div class="row align-items-start">
             <div class="col">
                 <p class="blogtitle">
-                    The Ultimate 2018 Web Developer's Guide.
+                    the modern web developer guide.
                 </p>
-                <a href="../blogposts/ultdevguide.html">
+                <a href="../blogposts/modernguide.html">
                     <img class="img-thumbnail" src="../blogimages/blogthumb1.png">
                 </a>
             </div>
             <div class="col">
                 <p class="blogtitle">
-                    Get your Mac setup to develop, in 2018.
+                    Setup your Mac setup for development, in 2018.
                 </p>
                 <a href="../blogposts/setupmac.html">
                     <img class="img-thumbnail" src="../blogimages/blogthumb2.png">
@@ -225,7 +231,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-12">
-                            &copy; 2017 Frankie Valentine. All rights reserved.
+                            &copy; 2018 Frankie Valentine. All rights reserved.
                             <p>Open source
                                 <a class="colfoot" href="https://opensource.org/licenses/MIT">MIT</a>.
                         </div>
@@ -237,6 +243,8 @@
         <!-- Scroll to Top Button-->
         <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
 
+        
+
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <!-- Bootstrap Core JS -->
@@ -245,6 +253,18 @@
     <script src="../js/main.js"></script>
     <!-- FontAwesome CDN -->
     <script src="https://use.fontawesome.com/f92d3f2da3.js"></script>
+    <script>
+        //day/night toggle page specific
+        $('#toggle-box-checkbox').on('change', function () {
+            if (this.checked) {
+                $('.blogtitle').addClass('bloggy');
+                $('.img-thumbnail').addClass('blogimgback');
+            } else {
+                $('.blogtitle').removeClass('bloggy');
+                $('.img-thumbnail').removeClass('blogimgback');
+            }
+        })
+    </script>
     
     </body>
 </html>
