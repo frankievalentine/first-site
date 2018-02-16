@@ -9,16 +9,8 @@ hr {
   margin-bottom: 0px;
 }
 
-a,
-a:focus,
-a:active {
-  color: #18bc9c;
-  outline: none;
-}
-
-a:hover {
-  color: #18bc9c;
-  text-decoration: none;
+a:focus { 
+  outline: none !important;
 }
 
 footer {
